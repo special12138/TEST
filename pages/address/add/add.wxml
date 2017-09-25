@@ -21,7 +21,7 @@
 	<view animation="{{animationData}}" class="modal-content">
 	    <view class="modal-header">
 	        <text class="modal-title">所在地区</text>
-	        <text class="modal-close" bindtap="cascadeDismiss">X</text>
+	        <image src="/images/close.png" class="modal-close" bindtap="cascadeDismiss" />
 	    </view>
 	    <view class="modal-body">
 
