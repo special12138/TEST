@@ -125,7 +125,7 @@ Page({
 		// 生成订单
 		var order = new AV.Object('Donate');
 		order.set('user', AV.User.current());
-		order.set('amount', that.data.value);
+		order.set('amount', parseFloat(that.data.value));
 		order.set('status', false);
 		// 保存订单
 		order.save().then(function (savedOrder) {
