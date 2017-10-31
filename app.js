@@ -9,8 +9,8 @@
 
 // 初始化AV
 const AV = require('./utils/av-weapp.js');
-const appId = "SgHcsYqoLaFTG0XDMD3Gtm0I-gzGzoHsz";
-const appKey = "xdv2nwjUK5waNglFoFXkQcxP";
+const appId = "7tm1OFlNlmLFukegUhmm4uDU-gzGzoHsz";
+const appKey = "XG4FRumQWJ7mNkFIral0ttvj";
 
 AV.init({ 
 	appId: appId, 
