@@ -22,11 +22,18 @@ Page({
 		});
 	},
 	logout: function () {
-		wx.navigateTo({
-			url: '../../admin/login/login'
+		AV.User.logOut();
+		wx.showToast({
+			title: '退出成功'
+		});
+		this.setData({
+			userInfo: ''
 		});
 	},
 	onShow: function () {
+		this.loadUser();
+	},
+	loadUser: function () {
 		var that = this;
 		// 获得当前登录用户
 		const user = AV.User.current();

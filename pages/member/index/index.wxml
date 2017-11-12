@@ -1,6 +1,6 @@
 <view class="userinfo">
-	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="chooseImage"></image>
-	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '/images/logo.png'}}" background-size="cover" bindtap="chooseImage"></image>
+	<text class="userinfo-nickname">{{userInfo.nickName ? userInfo.nickName : '未登录'}}</text>
 </view>
 <view class="order-area">
 	<view bindtap="navigateToOrder" class="order" data-status="0">
@@ -36,4 +36,4 @@
 	<image src="../../../images/icon_aboutus.png" />
 	<text>关于我们</text>
 </view>
-<button bindtap="logout" type="warn" class="logout">切换管理员</button>
+<button wx:if="{{userInfo}}" bindtap="logout" type="warn" class="logout">退出登录</button>
