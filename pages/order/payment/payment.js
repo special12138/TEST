@@ -28,7 +28,7 @@ Page({
 			totalFee: parseFloat(that.data.totalFee) * 100
 		}
 		AV.Cloud.run('pay', paramsJson).then(function(response) {
-			response = JSON.parse(response);
+			// response = JSON.parse(response);
 			// 调用成功，得到成功的应答 data
 			console.log(response);
 			// 发起支付
