@@ -8,6 +8,7 @@
  */
 
 const AV = require('../../../utils/av-weapp.js')
+var that
 Page({
 	data: {
 		goods: {},
@@ -15,23 +16,40 @@ Page({
 		galleryHeight: getApp().screenWidth
 	},
 	onLoad: function(options) {
+		that = this;
 		var goodsId = options.objectId;
 		this.getGoodsById(goodsId);
+		this.getEvaluateByGoods(goodsId);
 	},
 	getGoodsById: function(goodsId) {
-		var that = this
 		var query = new AV.Query('Goods');
-        // 生成商品对象
-        query.get(goodsId).then(function (goods) {
-			// console.log(goods);
-			that.setData({
-				goods: goods
-			});
-		// 成功获得实例
-	}, function (error) {
-		// 异常处理
-	});
+		// 生成商品对象
+		query.get(goodsId).then(function(goods) {
+		    // console.log(goods);
+		    that.setData({
+		        goods: goods
+		    });
+		    // 成功获得实例
+		}, function(error) {
+		    // 异常处理
+		});
     },
+	getEvaluateByGoods: function (goodsId) {
+		var query = new AV.Query('Evaluate');	
+		// 查询关联表的数据需要调用设置include属性，可以多次设定
+		query.include('user');
+		// 查询条件设定为当前goods对象
+		query.equalTo('goods', AV.Object.createWithoutData('Goods', goodsId));
+		// 查询所有记录
+		query.find().then(function (evaluateObjects) {
+			// 将返回结果返回到data数据中，以在wxml渲染
+			that.setData({
+				evaluateObjects: evaluateObjects
+			})
+		}, function (err) {
+			console.log(err);
+		});
+	},
     addCart: function() {
     	this.insertCart(this.data.goods);
 	},

@@ -21,7 +21,7 @@ Page({
 	    /* debug navi */
 
 	    // wx.navigateTo({
-	    //   url: "/pages/admin/login/login"
+	    //   url: "/pages/goods/detail/detail?objectId=5816e3b22e958a0054a1d711"
 	    // });
 
 	},

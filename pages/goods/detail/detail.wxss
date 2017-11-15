@@ -36,7 +36,7 @@ page {
 
 /*详情图片底部边距*/
 .detail {
-	margin-bottom: 50px;
+	
 }
 
 .detail image{
@@ -94,4 +94,58 @@ page {
 	width: 60rpx;
 	height: 48rpx;
 	padding-top: 5px; 
+}
+
+/*evaluate评价*/
+.evaluate-container {
+	padding-bottom: 50px;
+}
+
+.evaluate {
+	background: white;
+	display: flex;
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+/*头像*/
+.evaluate .avatar {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.evaluate .avatar image {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+/*评价图片*/
+.evaluate .main {
+	flex: 3;
+	font-size: 12px;
+	color: gray;
+}
+
+.evaluate .main .gallery {
+	display: flex;
+	flex-direction: row;
+}
+
+.evaluate .main .gallery image {
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+
+.evaluate .main .nickname {
+	
+}
+
+.evaluate .main .content {
+	margin: 10px 0;
+	color: black;
 }

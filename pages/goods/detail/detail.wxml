@@ -13,6 +13,23 @@ autoplay="true" interval="5000" duration="1000" style="height:{{galleryHeight}}p
 <view class="detail">
 	<image wx:for="{{goods.detail}}" src="{{item}}" wx:key="" mode="widthFix"></image>
 </view>
+<!-- 用户评价 -->
+<view class="evaluate-container">
+    <view wx:for="{{evaluateObjects}}" class="evaluate" wx:for-item="evaluate">
+        <view class="avatar">
+            <image src="{{evaluate.user.avatarUrl}}" />
+        </view>
+        <view class="main">
+            <view class="nickname">{{evaluate.user.nickName}}</view>
+            <view class="content">{{evaluate.content}}</view>
+            <view class="gallery">
+                <view class="image-container" wx:for="{{evaluate.images}}" wx:for-item="url">
+                    <image src="{{url}}" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
 <view class="footer">
     <view class="opt-buttons">
         <view class="button-group" bindtap="showCart">
