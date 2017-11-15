@@ -9,6 +9,6 @@
 	</view>
 </view>
 <view class="textarea-container">
-	<textarea value="{{remark}}" name="remark" placeholder="请输入评价内容" maxlength="-1" auto-height />
+	<textarea value="{{content}}" name="content" placeholder="请输入评价内容" maxlength="-1" auto-height bindblur="getContent" />
 </view>
 <button type="primary" bindtap="submit" class="submit">提交</button>
