@@ -16,9 +16,9 @@ Page({
     },
     onLoad: function(options) {
         that = this;
+        // 取出商品id
         var objectId = options.objectId;
-        // 暂时设定商品id
-        objectId = '5816ee82d203090055c8e686';
+        // 存在当前页面data中，以提交评价表使用
         that.setData({
             objectId: objectId
         });

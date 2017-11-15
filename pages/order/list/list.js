@@ -134,9 +134,13 @@ Page({
 		});
 	},
 	evaluate: function (e) {
-		var objectId = e.currentTarget.dataset.objectId;
+		// 当前订单的下标
+		var index = e.currentTarget.dataset.index;
+		// 当前订单的第一个商品，真实情况下应该有一个订单可能有多个商品，下所有商品的列表，取其中的某个商品
+		var goodsId = this.data.mappingData[index][0].objectId;
+		// 将第一个商品id传给评价页，作为评价表关联使用
 		wx.navigateTo({
-			url: '../../member/evaluate/evaluate?objectId=' + objectId
+			url: '../../member/evaluate/evaluate?objectId=' + goodsId
 		});
 	}
 });

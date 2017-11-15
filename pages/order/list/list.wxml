@@ -19,7 +19,7 @@
 		<text bindtap="pay" data-object-id="{{item.objectId}}" data-total-fee="{{item.amount}}" class="{{status != 0 ? 'hidden': ''}}">支付</text>
 		<text bindtap="receive" data-object-id="{{item.objectId}}" class="{{status != 2 ? 'hidden': ''}}">确认收货</text>
 		
-		<text wx:if="{{status == 3}}" bindtap="evaluate" data-object-id="{{item.objectId}}">评价</text>
+		<text wx:if="{{status == 3}}" bindtap="evaluate" data-object-id="{{item.objectId}}" data-index="{{index}}">评价</text>
 		<text>{{item.createdAt}}</text>
 	</view>
 	<view class="order-footer">
