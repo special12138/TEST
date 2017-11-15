@@ -24,10 +24,10 @@ Page({
         });
         console.log(objectId);
     },
-    getContent: function (e) {
-    	that.setData({
-    		content: e.detail.value
-    	});
+    getContent: function(e) {
+        that.setData({
+            content: e.detail.value
+        });
     },
     chooseImage: function() {
         // 选择图片
@@ -61,7 +61,7 @@ Page({
         });
         Promise.all(promises).then(
             function(files) {
-            	// Promise返回待上传图片数组
+                // Promise返回待上传图片数组
                 var uploadedImages = files.map(function(file) {
                     return file.url();
                 });
@@ -76,16 +76,16 @@ Page({
                 // 关联商品
                 evaluate.set('goods', AV.Object.createWithoutData('Goods', that.data.objectId));
                 // 保存到LeanCloud数据表
-                evaluate.save().then(function () {
-	                // 弹出提示
-	                wx.showToast({
-	                    title: '评价成功',
-	                    success: function() {
-	                        // wx.navigateBack();
-	                    }
-	                });
-                }, function (err) {
-                	console.log(err);
+                evaluate.save().then(function() {
+                    // 弹出提示
+                    wx.showToast({
+                        title: '评价成功',
+                        success: function() {
+                            // wx.navigateBack();
+                        }
+                    });
+                }, function(err) {
+                    console.log(err);
                 });
             }
         );
