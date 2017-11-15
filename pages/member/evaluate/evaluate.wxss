@@ -27,3 +27,26 @@
 	width: 20px;
 	height: 20px;
 }
+
+.textarea-container {
+	background: white;
+	padding: 10px;
+}
+
+/*输入框*/
+textarea {
+	background: #fcfcfc;
+	border: 1px solid #e2e2e2;
+	border-radius: 3px;
+	padding: 10px;
+	font-size: 14px;
+	min-height: 120px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/*提交按钮*/
+.submit {
+	margin: 0 10px;
+}

@@ -8,4 +8,7 @@
 		<image style="width: {{imageWidth}}px; height: {{imageWidth}}px" src="/images/icon_add.png" class="button-upload" bindtap="chooseImage" />
 	</view>
 </view>
-<button type="primary" bindtap="submit">提交</button>
+<view class="textarea-container">
+	<textarea value="{{remark}}" name="remark" placeholder="请输入评价内容" maxlength="-1" auto-height />
+</view>
+<button type="primary" bindtap="submit" class="submit">提交</button>
