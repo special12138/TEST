@@ -2,6 +2,22 @@
 
 ![输入图片说明](https://static.oschina.net/uploads/img/201702/16103707_mrRD.jpg "在这里输入图片标题")
 
+## 商用版小程序体验
+
+除了上述开源版，相应商用版也已经上线，如需订购请联系QQ: 185040150
+
+![识别体验](http://upload-images.jianshu.io/upload_images/2599324-0e638ee1e87e2ea6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 后台源码
+
+后台源码也已开源，[https://git.oschina.net/laeser/lendoo-web](https://git.oschina.net/dotton/lendoo-web)
+
+演示地址：[https://laeser.leanapp.cn/](https://laeser.leanapp.cn/)
+
+### 商品业后台演示
+
+[https://mall.it577.net/](https://mall.it577.net/)，密码与用户名相同
+
 ## 概览
 
 ![首页](https://static.oschina.net/uploads/img/201701/24201453_7EH9.png "在这里输入图片标题")
@@ -40,15 +56,15 @@
 
 ![git](https://static.oschina.net/uploads/img/201610/08171205_p1hX.gif "效果展示")
 
-LeanCloud数据包下载：[https://pan.baidu.com/s/1nvPmcsx](https://pan.baidu.com/s/1nvPmcsx)
+LeanCloud数据包下载：在此项目的db文件夹
 
 教程详见：[https://my.oschina.net/huangxiujie/blog/755324](https://my.oschina.net/huangxiujie/blog/760429)
 
-后台源码：[https://git.oschina.net/dotton/lendoo-web](https://git.oschina.net/dotton/lendoo-web)
+后台源码：[https://git.oschina.net/laeser/lendoo-web](https://git.oschina.net/dotton/lendoo-web)
 
 **您如果觉得灵动云商有用，可以扫下面二维码赞助我，谢谢。**
 
-![cash.jpg](http://upload-images.jianshu.io/upload_images/2599324-fcb1188bc42629ff.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![praise](http://upload-images.jianshu.io/upload_images/2599324-ab0a16d0b5d0206b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 用户 | 金额 | 日期
 --------  | ------ | --------
