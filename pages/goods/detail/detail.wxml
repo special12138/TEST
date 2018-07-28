@@ -10,6 +10,7 @@ autoplay="true" interval="5000" duration="1000" style="height:{{galleryHeight}}p
 	<text class="title">{{goods.title}}</text>
 	<text class="price">￥ {{goods.price}}</text>
 </view>
+<ad unit-id="adunit-1ee60bfa024274a5"></ad>
 <view class="detail">
 	<image wx:for="{{goods.detail}}" src="{{item}}" wx:key="" mode="widthFix"></image>
 </view>

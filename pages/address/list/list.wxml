@@ -1,3 +1,4 @@
+<ad unit-id="adunit-d8eb67e7f0ef4244"></ad>
 <view class="address-list">
 	<view class="item" wx:for="{{addressObjects}}" wx:key="">
 		<!-- first row -->
